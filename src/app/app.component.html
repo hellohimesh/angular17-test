@@ -1,6 +1,6 @@
 @if (user) {
   <p> if true</p>
-} @else if (user.isRobot) {
+} @else if (user) {
   <!-- robot users are rare, so load their profiles lazily -->
   @defer {
     <p>defer</p>
